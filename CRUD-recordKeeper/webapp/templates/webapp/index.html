@@ -1,0 +1,16 @@
+{% extends 'webapp/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<body>
+	<br><br>
+<div class="text-center">
+	<h3>Record Management System </h3>
+	<br>
+	<h5> keep track of your records effectively! </h5>
+	<hr>
+	<br>
+	{% if not user.is_authenticated %}
+	<a class="btn btn-primary" type="button" href="{% url 'webapp:register-link' %}" >Create you account &nbsp; <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+	{% endif %}
+</div>
+{% endblock %}

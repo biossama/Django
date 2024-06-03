@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand mb-3" href="/">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+	{% if user.is_authenticated %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'webapp:dashboard-link' %}">Dashboard &nbsp; <i class="fa fa-home"></i></a> 
+      </li>
+	 {% comment %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'webapp:create-link' %} ">Create Dashboard &nbsp; <i class="material-icons">&#xe871;</i></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'webapp:update-link' record.id %}">Update</a>
+      </li>
+    {% endcomment %}
+      <li class="nav-item">
+		<form action="{% url 'webapp:logout-link' %}" method="POST"/>
+		{% csrf_token %}
+		<a class="nav-link" href="{% url 'webapp:logout-link' %}">sign out &nbsp; <i class="fa fa-sign-out"></i></a>
+		</form>
+      </li>
+	{% else %}
+	  <li class="nav-item active">
+        <a class="nav-link mb-3" href="{% url 'webapp:create-link' %} ">Create Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'webapp:register-link'  %}">Register &nbsp; <i class="material-icons">&#xe890;</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'webapp:login-link' %}">Login &nbsp; <i class="fa fa-sign-in"></i></a>
+      </li>
+    {% endif %}
+    </ul>
+  </div>
+</nav>

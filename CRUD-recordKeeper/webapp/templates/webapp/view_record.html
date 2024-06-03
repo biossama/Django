@@ -1,0 +1,32 @@
+{% extends 'webapp/base.html'%}
+
+{% block title%} Detail record {% endblock %}
+
+{% block content %}
+	<div class="card mt-5 text-center bg-info">
+	
+		<div class="card-body">
+		
+			<p><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;<strong>Full name:</strong> {{record.first_name|upper}} {{record.last_name|upper}}<p><hr>
+			<p><strong>Email:</strong> {{record.email}}<p>
+			<p><strong>Phone:</strong> {{record.phone}}<p>
+			<p><strong>Adresse:</strong> {{record.adress}}<p>
+			<p><strong>City:</strong> {{record.city}}<p>
+			<p><strong>Province:</strong> {{record.province}}<p>
+			<p><strong>Country:</strong> {{record.country}}<p>
+			<p><strong>Date of creation:</strong> {{record.date_time|date:"Y-m-d"}}<p>
+
+		</div>
+
+	</div>
+	
+	<br>
+	
+	<div class="d-flex justify-content-center">
+	
+		<a type="submit" href="{% url 'webapp:dashboard-link' %}" class="btn btn-secondary btn-sm">Return &nbsp;<i class="fa fa-chevron-left" aria-hidden="true"></i></a>&nbsp;
+ 		<a type="submit" href="{% url 'webapp:update-link' record.id %}" class="btn btn-info btn-sm">Update record  &nbsp; <i class="fa fa-plus" aria-hidden="true"></i></a>&nbsp;
+		<a type="submit" href="{% url 'webapp:delete-link' record.id %}" class="btn btn-danger btn-sm">Delete &nbsp;<i class="fa fa-minus-circle" aria-hidden="true"></i></a> 
+		
+	</div>
+{% endblock %}

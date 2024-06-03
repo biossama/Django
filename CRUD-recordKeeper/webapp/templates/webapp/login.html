@@ -1,0 +1,27 @@
+{% extends 'webapp/base.html' %}
+
+{% load crispy_forms_tags%}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<body>
+
+<div class="container mt-4 bg-light shadow-md p-5 form-layout">
+	<form action="{% url 'webapp:login-link' %}" method="post" />
+		{% csrf_token %}
+		{{form|crispy}}
+
+		<button class="btn btn-primary w-100 mt-4">Login &nbsp; <i class="fa fa-key" aria-hidden="true"></i></button>
+	</form>
+
+	<div class="text-center">
+		<p> Don't have account ? </p> 
+		<a href="{% url 'webapp:register-link' %}">Register</a>
+	</div>	
+	
+</div>
+
+</body>
+
+{% endblock %}
