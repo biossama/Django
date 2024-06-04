@@ -1,5 +1,5 @@
 
-# Django WebApp
+# Django UserAuth and Record Management
 
 A comprehensive Django-based web application that includes user authentication (registration, login, logout) and CRUD operations for managing records.
 
@@ -37,4 +37,9 @@ git clone https://github.com/biossama/Django.git
 cd Django/CRUD-recordKeeper
 ````
 ![HOME!](img-crud/home.png)
+![register!](img-crus/register.png)
+![login!](img-crud/login.png)
+![dashbord!](img-crud/dashboard.png)
+![create!](img-crud/create.png)
+![update!](img-crud/update.png)
 
