@@ -44,9 +44,9 @@ cd Django/CRUD-recordKeeper
 
 ![login!](img-crud/login.png)
 
-![dashbord!](img-crud/dashboard.png)
-
 ![create!](img-crud/create.png)
+
+![dashbord!](img-crud/dashboard.png)
 
 ![update!](img-crud/update.png)
 
