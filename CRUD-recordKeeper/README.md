@@ -13,10 +13,12 @@ A comprehensive Django-based web application that includes user authentication (
 ## Requirements
 
 - Python 3
-- Django 
+- Django
+- javascript
 - pillow
 - django-crispy-forms
 - Bootstrap
+  
   
 ## Create and activate a virtual environment
 ```bash
