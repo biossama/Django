@@ -37,7 +37,7 @@ git clone https://github.com/biossama/Django.git
 cd Django/CRUD-recordKeeper
 ````
 ![HOME!](img-crud/home.png)
-![register!](img-crus/register.png)
+![Register!](img-crud/register.png)
 ![login!](img-crud/login.png)
 ![dashbord!](img-crud/dashboard.png)
 ![create!](img-crud/create.png)
