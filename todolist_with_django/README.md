@@ -11,7 +11,7 @@ A simple Django-based Todo application that allows users to create and delete to
 ## Requirements
 
 - Python 3
-- Django 3
+- Django 
 
 ## Installation
 
@@ -21,3 +21,5 @@ A simple Django-based Todo application that allows users to create and delete to
  git clone https://github.com/biossama/Django.git todolist_with_django
 cd todolist_with_django
 ```
+
+![todo!](todo.png)
