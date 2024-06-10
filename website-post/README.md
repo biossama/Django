@@ -13,22 +13,22 @@ This is a web application built with Django that allows users to register, log i
 
 ## Requirements
 
-- Python 3.x
-- Django 3.x or higher
+- Python 3
+- Django 3 or higher
 - Any other dependencies specified in `requirements.txt`
 
 ## Installation
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/yourusername/Django.git
+    cd website-post
     ```
 
 2. Create a virtual environment:
     ```sh
     python -m venv .venv
-    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+    source .venv/bin/activate  
     ```
 
 3. Install the dependencies:
@@ -48,10 +48,10 @@ This is a web application built with Django that allows users to register, log i
 
 6. Run the development server:
     ```sh
-    python manage.py runserver
+    python manage.py runserver 8080
     ```
 
-7. Open your web browser and navigate to `http://127.0.0.1:8000/` to see the application.
+7. Open your web browser and navigate to `http://127.0.0.1:8080/` to see the application.
 
 ## Usage
 
@@ -84,18 +84,6 @@ This is a web application built with Django that allows users to register, log i
 - `templates/` - Contains HTML templates for the application.
 - `static/` - Contains static files (CSS, JavaScript, images).
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a new Pull Request.
 
 ## Contact
 
@@ -106,20 +94,16 @@ For any questions or feedback, please open an issue or contact me at [your-email
 - Django Documentation: https://docs.djangoproject.com/
 - Bootstrap for UI Components: https://getbootstrap.com/
 
----
-
-Feel free to modify this `README.md` file to fit your specific project needs and information.
-
 
 
 ![HOME!](image/login.png)
 
-![HOME!](register/home.png)
+![HOME!](image/register.png)
 
-![HOME!](home/home.png)
+![HOME!](image/home.png)
 
-![HOME!](create-post/home.png)
+![HOME!](image/create-post.png)
 
-![HOME!](list-post/home.png)
+![HOME!](image/list-post.png)
 
-![HOME!](post/home.png)
+![HOME!](image/post.png)
