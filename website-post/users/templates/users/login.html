@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+   <h1 style="text-align:center; padding:10px;">Login</h1>
+<div>
+	<form class="form-with-validation" action="{% url 'users:login_link' %}" method="post">
+		{% csrf_token %}
+			{{form|crispy}}
+		{% if request.GET.next %}
+	<input type="hidden" name="next" value="{{ request.GET.next }}" />
+		{% endif %}
+		<button class="form-submit">Submit</button>
+	 	<div style="text-align:center">
+			<p> Don't have account ? </p>
+			<a href="{% url 'users:register_link' %}">Register</a>
+		</div>
+
+	</form>
+</div>
+	
+{% endblock %}

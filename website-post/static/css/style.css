@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000;
+    color: #f5f5f5;
+    font-size: 1.5rem; /* Ajusté pour une meilleure lisibilité */
+    font-family: Arial, sans-serif; /* Ajout d'une police de caractères */
+}
+
+nav {
+    padding: 1rem;
+    background-color: #007BFF; /* Utilisation d'une couleur plus accessible */
+    color: #fff;
+	font-family: 'Arial', sans-serif;
+    font-size: 1.5rem; /* Ajusté pour une meilleure lisibilité */
+    text-align: center; /* Centrage du texte */
+}
+
+main {
+    padding: 5rem; /* Augmentation du padding pour plus d'espace */
+}
+
+section {
+    display: flex;
+    flex-direction: column; /* Utilisation de flex-direction */
+    gap: 1.5rem; /* Augmentation du gap pour plus d'espace */
+}
+
+h1,
+h2 {
+    font-size: 1.8rem; /* Ajusté pour une meilleure lisibilité */
+}
+
+p {
+    font-size: 1.25rem; /* Augmenté pour une meilleure lisibilité */
+}
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+.titleNav{
+ 	padding: 0.2rem;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif; /* Changer la police */
+    font-style: italic; /* Italique */
+    font-weight: bold; /* Gras */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    letter-spacing: 0.1rem; /* Espacement entre les lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre au texte */
+    text-align: center; /* Centrage du texte */
+    transition: opacity 0.3s; /* Ajout d'une transition pour l'effet hover */
+	
+}
+
+.titleNav:hover{
+	opacity: 0.80s;
+}
+.banner {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Centrer la bannière */
+    border: 2px solid #007BFF; /* Ajout d'une bordure */
+    border-radius: 10px; /* Ajout d'un border-radius */
+}
+
+.form-with-validation {
+    font-size: 1.25rem; /* Augmenté pour une meilleure lisibilité */
+    padding: 1.5rem; /* Augmentation du padding pour plus d'espace */
+    display: flex;
+    flex-direction: column; /* Utilisation de flex-direction */
+    gap: 1.5rem; /* Augmentation du gap pour plus d'espace */
+    background-color: #333; /* Ajout d'un fond pour mieux différencier */
+    border-radius: 10px; /* Ajout d'un border-radius */
+}
+
+.form-with-validation div {
+    display: flex;
+    flex-direction: column; /* Utilisation de flex-direction */
+    gap: 0.5rem;
+}
+
+.form-with-validation input {
+    padding: 0.5rem; /* Augmentation du padding pour plus de confort */
+    max-width: 300px;
+    border: 1px solid #ccc; /* Ajout d'une bordure */
+    border-radius: 5px; /* Ajout d'un border-radius */
+}
+
+.form-submit {
+    padding: 0.75rem; /* Augmentation du padding pour plus de confort */
+    border-radius: 10px;
+    width: 150px; /* Augmenté pour plus de confort */
+    background-color: #007BFF; /* Ajout d'une couleur de fond */
+    color: #fff; /* Couleur du texte */
+    cursor: pointer; /* Ajout d'un curseur pour l'interactivité */
+    border: none; /* Suppression de la bordure par défaut */
+    transition: background-color 0.3s; /* Ajout d'une transition pour l'effet hover */
+}
+
+.form-submit:hover {
+    background-color: #0056b3; /* Couleur de fond au hover */
+}
+
+.helptext {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: #ccc; /* Couleur du texte */
+}
+
+.helptext ul {
+    list-style-type: none;
+    padding-left: 1rem; /* Ajout d'un padding pour le décalage */
+}
+
+.errorlist {
+    color: #f00;
+    margin-left: 2rem;
+}
+
+.errorlist li::marker {
+    content: '🚨 ';
+}
+
+.logout {
+    display: inline-block;
+	font-size:1rem;
+}
+
+.logout-button {
+
+    padding: 0.2rem;
+    background-color: blue;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif; /* Changer la police */
+    font-style: italic; /* Italique */
+    font-weight: bold; /* Gras */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    letter-spacing: 0.1rem; /* Espacement entre les lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre au texte */
+    text-align: center; /* Centrage du texte */
+    transition: opacity 0.3s; /* Ajout d'une transition pour l'effet hover */
+	border: blue;
+}
+
+.logout-button:hover {
+    opacity: 0.85;
+}
+
+.post-title-link {
+    display: inline-block; /* Nécessaire pour que padding et border soient appliqués correctement */
+    padding: 0.5rem 1rem; /* Ajoute du padding pour l'espace interne */
+    background-color: #007BFF; /* Couleur de fond par défaut */
+    color: #fff; /* Couleur du texte */
+    border: 2px solid transparent; /* Bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime la décoration de texte par défaut */
+    transition: background-color 0.3s, border-color 0.3s; /* Transition pour les effets hover */
+    text-align: center; /* Centrage du texte */
+}
+
+.post-title-link:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+    border-color: #81dbb8; /* Couleur de la bordure au survol */
+    color: #fff; /* Couleur du texte au survol (optionnel, si vous voulez changer) */
+    text-decoration: none; /* Assurer qu'il n'y a pas de soulignement au survol */
+}
+
+/* Styles pour structurer le texte */
+/* Styles pour structurer le texte */
+.content-wrapper {
+    max-width: 800px; /* Limite la largeur maximale du contenu */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    padding: 2rem; /* Ajoute du padding autour du contenu */
+    background-color: #333; /* #f9f9f9;Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    overflow: auto; /* Empêche le texte de sortir de la div */
+}
+
+.main-title {
+    font-size: 2.5rem; /* Taille de police pour le titre principal */
+    color: #fff; /* Couleur du texte */
+    text-align: center; /* Centre le titre */
+    margin-bottom: 1rem; /* Espace en dessous du titre */
+}
+
+.intro-text, .description-text {
+    font-size: 1.25rem; /* Taille de police pour les paragraphes */
+    color: #fff; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+    margin-bottom: 1rem; /* Espace en dessous des paragraphes */
+    text-align: justify; /* Justifie le texte */
+}
+

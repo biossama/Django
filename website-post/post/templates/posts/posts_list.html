@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block title %}
+	Posts 
+{% endblock %}
+{% block content %}
+
+    <h1 style="text-align:center; margin-bottom:5px;">Posts List</h1><br>
+
+{% for post in posts reversed %}
+<hr><br>
+<li style="text-align:center; list-style-type: none; "><a  class="post-title-link" href="{% url 'posts:post_slug' slug=post.slug %}">{{ post.title|title }}	</a></li><br>
+<p>{{post.content|slice:":60"}}... ( for more click on the title ) </p><br>
+<h6 style="font-family:italic"> {{post.date}}</h6>
+ <h6 style="font-family:italic"> author: {{post.author}}</h6>
+<br><hr>
+{% endfor %}
+{% endblock %}
