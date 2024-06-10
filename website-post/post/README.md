@@ -67,3 +67,14 @@ This is a web application built with Django that allows users to register, log i
 - Django Documentation: https://docs.djangoproject.com/
 - Bootstrap for UI Components: https://getbootstrap.com/
 
+![HOME!](image/login.png)
+
+![HOME!](register/home.png)
+
+![HOME!](home/home.png)
+
+![HOME!](create-post/home.png)
+
+![HOME!](list-post/home.png)
+
+![HOME!](post/home.png)
