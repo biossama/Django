@@ -85,25 +85,21 @@ This is a web application built with Django that allows users to register, log i
 - `static/` - Contains static files (CSS, JavaScript, images).
 
 
-## Contact
-
-For any questions or feedback, please open an issue or contact me at [your-email@example.com](mailto:your-email@example.com).
-
-## Acknowledgments
-
-- Django Documentation: https://docs.djangoproject.com/
-- Bootstrap for UI Components: https://getbootstrap.com/
-
 
 
 ![HOME!](image/login.png)
 
+
 ![HOME!](image/register.png)
+
 
 ![HOME!](image/home.png)
 
+
 ![HOME!](image/create-post.png)
 
+
 ![HOME!](image/list-post.png)
+
 
 ![HOME!](image/post.png)
