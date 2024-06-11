@@ -21,7 +21,7 @@ This is a web application built with Django that allows users to register, log i
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/Django.git
+    git clone https://github.com/biossama/Django.git
     cd website-post
     ```
 
